@@ -12,16 +12,16 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { BsCart2 } from "react-icons/bs";
 import SaleModal from '../Components/SaleModal';
 import { Link } from 'react-router-dom/dist/umd/react-router-dom.development';
-
+import img from '../../assets'
 function ItemListings({ Count, toggleModal  }) {
   console.log(toggleModal)
   const instances = Array.from({ length: Count }, (_, index) => index + 1);
   const images = [
    
-    './assets/Jim Pertyk/Off road car/IMG_1148.jpg',
-    './assets/Jim Pertyk/Off road car/IMG_1149.jpg',
-    './assets/Jim Pertyk/Off road car/IMG_1150.jpg',
-    './assets/Jim Pertyk/Off road car/IMG_1151.jpg',
+    '/assets/Jim Pertyk/Off road car/IMG_1148.jpg',
+    '/assets/Jim Pertyk/Off road car/IMG_1149.jpg',
+    '/assets/Jim Pertyk/Off road car/IMG_1150.jpg',
+    '/assets/Jim Pertyk/Off road car/IMG_1151.jpg',
     // Add more image paths here if needed
   ];
   const price = [
