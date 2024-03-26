@@ -63,11 +63,23 @@ const toggleModal = () => {
           <main>
             <div className='Item-container'>
             <SaleModal isOpen={isModalOpen} toggleModal={toggleModal} />
-             <ItemInstance Link='/motorcycles' onClick={toggleModal} Thumbnail={images[0]} Title='Motorcycles' />
-             <ItemInstance Link='/mcycle-parts' Thumbnail={images[1]} Title='Motorcycle parts'/>
-             <ItemInstance  Link='/cars' Thumbnail={images[2]} Title='Cars'/>
-             <ItemInstance Link='/car-truck-projects' Thumbnail={images[3]}Title='Cars and Truck Projects'/>
-            </div>
+             <Link to='/motorcycles'>
+
+             <ItemInstance  onClick={toggleModal} Thumbnail={images[0]} Title='Motorcycles' />
+             </Link>
+             <Link to='/mcycle-parts'>
+
+             <ItemInstance Thumbnail={images[1]} Title='Motorcycle parts'/>
+             </Link>
+             <Link to='/cars'>
+
+             <ItemInstance   Thumbnail={images[2]} Title='Cars'/>
+             </Link>
+             <Link to='/car-truck-projects'>
+
+             <ItemInstance  Thumbnail={images[3]}Title='Cars and Truck Projects'/>
+           </Link>
+           </div>
           </main>
           <aside>
             {/* Add content for the aside if needed */}
