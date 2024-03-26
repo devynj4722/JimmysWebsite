@@ -101,7 +101,7 @@ a.nostyle:visited {
      flex: 0 1 calc(25% - 10px); /* Adjust card width to be 25% - margin */
      margin: 5px; /* Adjust the margin as needed */
      /* Other styling for your card */
-     
+     max-height: 35vh;
    }
    /* Media query for smaller screens like iPhone SE */
    @media (max-width: 600px) { /* Adjust breakpoint as needed */
@@ -114,7 +114,7 @@ a.nostyle:visited {
      display: flex;
    flex-wrap: wrap;
    row-gap: 5vh;
-  
+padding-left: 5%;
    }
    @media (max-width: 600px)  {
      .Item-container {
