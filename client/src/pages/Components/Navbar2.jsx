@@ -11,12 +11,12 @@ return (
     
     <Link to='/shop'>
     
-    <Nav.Link  eventKey="/shop">Shop</Nav.Link>
+    Shop
     </Link>  
     <Link to='/contact'>
     
     
-      <Nav.Link  eventKey="link-2">Contact</Nav.Link>
+      Contact
     </Link>
   
        
