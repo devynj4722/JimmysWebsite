@@ -17,10 +17,10 @@ function ItemListings({ Count, toggleModal  }) {
   const instances = Array.from({ length: Count }, (_, index) => index + 1);
   const images = [
    
-    './assets/Jim Pertyk/Off road car/IMG_1148.jpg',
-    './assets/Jim Pertyk/Off road car/IMG_1149.jpg',
-    './assets/Jim Pertyk/Off road car/IMG_1150.jpg',
-    './assets/Jim Pertyk/Off road car/IMG_1151.jpg',
+    './assets/Jim Pertyk/Off road car/IMG_1148.JPG',
+    './assets/Jim Pertyk/Off road car/IMG_1149.JPG',
+    './assets/Jim Pertyk/Off road car/IMG_1150.JPG',
+    './assets/Jim Pertyk/Off road car/IMG_1151.JPG',
     // Add more image paths here if needed
   ];
   const price = [
