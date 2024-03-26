@@ -12,7 +12,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { BsCart2 } from "react-icons/bs";
 import SaleModal from '../Components/SaleModal';
 import { Link } from 'react-router-dom/dist/umd/react-router-dom.development';
-import img from '../../assets'
 function ItemListings({ Count, toggleModal  }) {
   console.log(toggleModal)
   const instances = Array.from({ length: Count }, (_, index) => index + 1);
