@@ -1,51 +1,102 @@
 {
 
   "name": "client",
+
   "private": true,
-  "version": "0.0.0",
+
+  "version": "0.1.0",
+
   "license": "MIT",
+
   "scripts": {
+
     "dev": "vite",
+
     "build": "vite build",
+
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+
     "preview": "vite preview",
+
     "sass": "sass --watch ./src/index.scss:./src/style/style.css",
+
     "deploy": "gh-pages -d dist"
+
   },
+
   "dependencies": {
+
     "@fortawesome/fontawesome-free": "^6.5.1",
+
     "bootstrap": "^5.3.3",
+
     "mdb-react-ui-kit": "^7.2.0",
+
+    "next": "^14.1.4",
+
     "react": "^18.2.0",
+
     "react-bootstrap": "^2.10.1",
+
     "react-dom": "^18.2.0",
+
     "react-icons": "^5.0.1",
+
     "react-router-dom": "^6.22.3"
+
   },
+
   "devDependencies": {
+
     "eslint": "^8.44.0",
+
     "eslint-plugin-react-hooks": "^4.6.0",
+
     "eslint-plugin-react-refresh": "^0.4.1",
+
     "gh-pages": "^6.1.1",
+
     "sass": "^1.63.6",
+
     "vite": "^4.4.0"
+
   },
+
   "eslintConfig": {
+
     "extends": [
+
       "react-app",
+
       "react-app/jest"
+
     ]
+
   },
+
   "browserslist": {
+
     "production": [
+
       ">0.2%",
+
       "not dead",
+
       "not op_mini all"
+
     ],
+
     "development": [
+
       "last 1 chrome version",
+
       "last 1 firefox version",
+
       "last 1 safari version"
+
     ]
+
   }
+
 }
+

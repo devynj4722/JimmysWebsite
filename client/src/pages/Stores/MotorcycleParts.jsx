@@ -1,5 +1,5 @@
 
-import '../App.scss'
+import '../Components/App.scss'
 import NavBar from '../Components/Navbar';
 import StoreInstance from '../Components/StoreInstance';
 import { HiMenu } from "react-icons/hi";
@@ -114,9 +114,7 @@ function MotorcycleParts() {
           <ItemListings toggleModal={toggleModal} Count={4} />
         </div>
       </main>
-      <aside>
-        {/* Add content for the aside if needed */}
-      </aside>
+     
       <footer>
         {/* Add content for the footer if needed */}
       </footer>

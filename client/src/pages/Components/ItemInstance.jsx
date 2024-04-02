@@ -9,35 +9,43 @@ return(
 <>
 <article className="listing-item-card">
     <div className='listing-item-container'>
-        <div className='listing-item-header'>
-<picture role='button'  className='item-picture item-picture-main'>
+    <div className='sub-info'>
 
-    
-   <a href={Link}>
-
- <img src={Thumbnail} className='img-thumbnail' alt='test img'/>
-   </a>
-   
-</picture>
-     </div>
-   <div role='button'  id='listing-item-text-button'>
+<div   id='listing-item-text-button'>
         <h3 className='listing-item-title-head'>
-         <span className='listing-item-title'>
+         <div className='listing-item-title'>
         
          {Title}
-         </span>
+         </div>
 
         </h3>
     </div>
     <div className="listing-item-cost-container">
-        <span className='listing-item-cost'>
+        <div className='listing-item-cost'>
             {Price}
-        </span>
+        </div>
         <br></br>
-        <span className='item-new'>
+        <div className='item-new'>
             {New}
-        </span>
+        </div>
+
     </div>
+
+</div>
+        <div className='listing-item-header'>
+<picture role='button'  className='item-picture item-picture-main'>
+
+    
+
+
+ <img src={Thumbnail} className='img' alt='test img'/>
+  
+   
+</picture>
+
+     </div>
+
+ 
         </div>
 
 

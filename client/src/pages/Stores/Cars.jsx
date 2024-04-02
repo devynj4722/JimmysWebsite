@@ -1,5 +1,5 @@
 
-import '../App.scss'
+import '../Components/App.scss'
 import NavBar from '../Components/Navbar';
 import StoreInstance from '../Components/StoreInstance';
 import { HiMenu } from "react-icons/hi";
@@ -65,7 +65,7 @@ function Cars() {
 </header>
 </Link>
 
-      <NavBar2 />
+     
       <div className='current-status'>
       <Link to='/check-out'>
       <button className='btn btn-rounded '><BsCart2 /></button> <span className='status-caption'>  &nbsp;  Open for Pick-Up and Shipping</span>

@@ -1,3 +1,7 @@
+.access-root {
+
+}
+
 
 .SearchBar {
     display: flex;
@@ -15,6 +19,10 @@
    .vendor-info {
    
    }
+   .Title-Header {
+    font-family: 'CGF Off-Road';
+    color: wheat;
+   }
    .Title-Description {
      font-size: 1.5rem;
      text-decoration:overline;
@@ -22,6 +30,14 @@
    }
    .Header-Section {
      text-align: center;
+    background-image: url(../../public/Web\ Graphics/pfr-jimwh.png);
+    background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+    height: 20vh;
+    max-width: 1216px ;
+    font-family: 'CGF Off-Road';
    }
    .btn {
      --bs-btn-padding-x: 0.75rem;
@@ -83,12 +99,24 @@ a.nostyle:visited {
      font-weight: 700;
    }
    .main-container {
-     margin-left: 10%;
-     margin-right: 10%;
-    height: 200vh;
+    width: 100%;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
     background-color: white;
+    max-height: 6000px;
+    height: 200vh;
+   }
+   .gutters {
+    height: 100%;
+    max-width: 1216px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background: rgba( 244, 184, 0, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+
    }
    .relevance-headers {
      display: flex;
@@ -98,37 +126,45 @@ a.nostyle:visited {
      max-height: 10vh;
    }
    .Item-container article {
-     flex: 0 1 calc(25% - 10px); /* Adjust card width to be 25% - margin */
-     margin: 5px; /* Adjust the margin as needed */
+    
+     /* Adjust the margin as needed */
      /* Other styling for your card */
-     max-height: 35vh;
+ 
    }
    /* Media query for smaller screens like iPhone SE */
    @media (max-width: 600px) { /* Adjust breakpoint as needed */
      .Item-container article {
-       flex: 0 1 calc(50% - 10px); /* Adjust to 50% for 2 cards in a row */
+       /* Adjust to 50% for 2 cards in a row */
     max-height: 25vh;
      }
    }
    .Item-container {
-     display: flex;
-   flex-wrap: wrap;
-   row-gap: 5vh;
-padding-left: 5%;
+ display: grid;
+ grid-template-columns:  repeat(auto-fill, minmax(135px, 1fr));
+ position: relative;
+ grid-gap: 16px;
+padding-bottom: 10%;
    }
-   @media (max-width: 600px)  {
+   @media only screen and (min-width: 768px)  {
      .Item-container {
-       row-gap: 20px;
+      grid-gap: 24px;
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+      padding: 0;
+      padding-bottom: 10%;
      }
    }
    .status-caption {
-    padding-top: 10 px;
+    
    }
-   main{
+  
    
-     height: 100%;
+   .Pagination {
+margin-top: 2%;
+margin-bottom: 2%;
+
+    display: flex;
+    justify-content: center;
    }
-   
    header {
      background-color:rgb(233, 233, 233);
    

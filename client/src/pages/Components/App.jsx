@@ -1,10 +1,10 @@
 
 import './App.scss'
-import NavBar from './Components/Navbar';
-import ItemListings from './Components/ItemListings';
+
+import ItemListings from './ItemListings';
 import { HiMenu } from "react-icons/hi";
 import React, { useState } from 'react';
-import NavBar2 from './Components/Navbar2';
+import NavBar2 from './Navbar2'
 import { InputGroup, FormControl } from 'react-bootstrap';
 import { IoIosSearch } from "react-icons/io";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,21 +14,21 @@ import { Link } from 'react-router-dom/dist/umd/react-router-dom.development';
 
 function App() {
   return (
-    <div className='main-container'>
-      <header className='Header-Section'>
+    <div className='shop-main-container'>
+      <header className='shop-Header-Section'>
         <h1>
           Jimmy P's
           <div>
-            <span className='Title-Description'>Off the Grid Racing and Restoration</span>
+            <span className='shop-Title-Description'>Off the Grid Racing and Restoration</span>
           </div>
         </h1>
       </header>
       <NavBar2 />
-      <div className='current-status'>
+      <div className='shop-current-status'>
       <BsCart2 /> &nbsp;  Open for Pick-Up and Shipping
       </div>
-      <div className='SearchBar'>
-        <div className='vendor-info'>
+      <div className='shop-SearchBar'>
+        <div className='shop-vendor-info'>
           <span>Hours Of Operation: 6 AM - 5 PM</span>
         </div>
         <InputGroup className="mb-3">
@@ -41,12 +41,12 @@ function App() {
           />
         </InputGroup>
       </div>
-      <div className='relevance-headers'>
-        <span className='store-tag'>All Items</span>
+      <div className='shop-relevance-headers'>
+        <span className='shop-store-tag'>All Items</span>
         
           <label>
             
-            <div className='rel-sort'>
+            <div className='shop-rel-sort'>
        <span id='sort'>Sort:</span>  
             <Dropdown>
       <Dropdown.Toggle variant="Secondary" id="dropdown-basic">
@@ -65,7 +65,7 @@ function App() {
         </div>
       
       <main>
-        <div className='Item-container'>
+        <div className='shop-Item-container'>
           <ItemListings Count={6} />
         </div>
       </main>

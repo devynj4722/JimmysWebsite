@@ -6,4 +6,9 @@
 @import './sass/base/typographies';
 
 @import './main.scss';
-@import './pages/App.scss';
+
+@font-face {
+    font-family: "CGF Off-Road";
+    src: local('CGF Off-Road'),
+    url('./fonts/CGF\ Off-Road.ttf') format('truetype')
+}

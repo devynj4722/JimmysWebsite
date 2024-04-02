@@ -1,5 +1,5 @@
 
-import '../App.scss'
+import '../Components/App.scss'
 import NavBar from '../Components/Navbar';
 import StoreInstance from '../Components/StoreInstance';
 import { HiMenu } from "react-icons/hi";
